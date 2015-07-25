@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CloudPhotoViewer.iml" filepath="$PROJECT_DIR$/CloudPhotoViewer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/cpviewer.iml" filepath="$PROJECT_DIR$/app/cpviewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
