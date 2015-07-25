@@ -11,8 +11,8 @@ public class CloudPhotoLandAdapter extends CloudPhotoAdapter {
         super(context);
     }
 
-//    @Override
-//    protected boolean showTitle(int position) {
-//        return false;
-//    }
+    @Override
+    protected boolean showTitle(int position) {
+        return false;
+    }
 }
