@@ -10,7 +10,7 @@ import com.squareup.picasso.Picasso;
 import nini.cpviewer.R;
 import nini.cpviewer.model.CloudItemForView;
 import nini.cpviewer.widget.RoundedTransformation;
-import nini.cpviewer.widget.Utils;
+import nini.cpviewer.widget.UI;
 
 /**
  * Created by nini on 15/7/23.
@@ -25,7 +25,7 @@ public class CloudPhotoItemViewHolder extends RecyclerView.ViewHolder {
     protected CloudPhotoItemViewHolder(View itemView) {
         super(itemView);
 
-        transformation = new RoundedTransformation(Utils.toPixel(itemView.getContext(), 10), 0);
+        transformation = new RoundedTransformation(UI.toPixel(itemView.getContext(), 10), 0);
         networkImageView = (ImageView) itemView.findViewById(R.id.networkImageView);
 
         titleTextView = (TextView) itemView.findViewById(R.id.titleTextView);

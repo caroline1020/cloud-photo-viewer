@@ -39,12 +39,16 @@ public class CloudPhotoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     @Override
     public int getItemViewType(int position) {
-        if (titleIds.contains(position)) {
+        if (showTitle(position)) {
             return VIEW_TYPE_TITLE_AND_PHOTO;
         } else {
             return VIEW_TYPE_PHOTO;
         }
 
+    }
+
+    protected boolean showTitle(int position) {
+        return titleIds.contains(position);
     }
 
     @Override

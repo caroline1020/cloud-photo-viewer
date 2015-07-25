@@ -37,7 +37,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int i) {
         ((CategoryViewHolder) viewHolder).bind(items.get(i), selectedCategory == items.get(i));
-
     }
 
     @Override
@@ -56,7 +55,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         notifyDataSetChanged();
     }
 
-    public CloudPhotoCategory getSelectedCategory() {
-        return selectedCategory;
+    public void setSelectedCategory(int category) {
+        this.selectedCategory = items.get(category);
+        notifyDataSetChanged();
     }
+
 }
