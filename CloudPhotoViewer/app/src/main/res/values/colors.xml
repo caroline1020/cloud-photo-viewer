@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="error_text_color">#f69c4c</color>
+    <color name="default_dark_bg">#303030</color>
+    <color name="default_light_bg">#f0f0f0</color>
+    <color name="default_dark_text">#303030</color>
+    <color name="default_light_text">#f0f0f0</color>
+
+
+</resources>

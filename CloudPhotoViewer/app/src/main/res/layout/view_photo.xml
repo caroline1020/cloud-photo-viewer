@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="360dp"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/downloading"
+        android:textColor="#f69c4c"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/networkImageView"
+        android:layout_width="320dp"
+        android:layout_height="320dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/image"
+        android:background="@drawable/bg_cloud_photo_item_info">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/likedCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/heart"
+            android:drawablePadding="3dp"
+            android:gravity="right"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</RelativeLayout>
