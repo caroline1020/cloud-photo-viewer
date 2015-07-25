@@ -12,7 +12,7 @@ public class CloudPhotoLandAdapter extends CloudPhotoAdapter {
     }
 
     @Override
-    protected boolean showTitle(int position) {
-        return false;
+    public int getItemViewType(int position) {
+        return VIEW_TYPE_PHOTO;
     }
 }

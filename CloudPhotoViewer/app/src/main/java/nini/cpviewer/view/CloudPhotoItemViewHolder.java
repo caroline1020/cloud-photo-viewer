@@ -26,14 +26,16 @@ public class CloudPhotoItemViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
 
         transformation = new RoundedTransformation(UI.toPixel(itemView.getContext(), 10), 0);
-        networkImageView = (ImageView) itemView.findViewById(R.id.networkImageView);
+        networkImageView = (ImageView) itemView.findViewById(R.id.photoImageView);
 
         titleTextView = (TextView) itemView.findViewById(R.id.titleTextView);
         likedCountTextView = (TextView) itemView.findViewById(R.id.likedCountTextView);
     }
 
     public void bind(CloudItemForView itemForView) {
-        Picasso.with(itemView.getContext()).load(itemForView.getItem().getUrl()).fit().centerCrop().transform(transformation).into(networkImageView);
+        Picasso.with(itemView.getContext()).load(itemForView.getItem().getUrl()).fit()
+        .placeholder(R.drawable.icon_progressing)
+                .error(R.drawable.icon_error).centerCrop().transform(transformation).into(networkImageView);
         titleTextView.setText(itemForView.getItem().getTitle());
         likedCountTextView.setText(String.valueOf(itemForView.getItem().getLiked_count()));
     }

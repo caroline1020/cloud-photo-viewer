@@ -19,7 +19,7 @@ import nini.cpviewer.model.CloudPhotoItem;
  */
 public class CloudPhotoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int VIEW_TYPE_TITLE_AND_PHOTO = 2;
-    private static final int VIEW_TYPE_PHOTO = 1;
+    protected static final int VIEW_TYPE_PHOTO = 1;
     protected List<CloudItemForView> items = new ArrayList<>();
     protected ArrayList<Integer> titleIds;
 

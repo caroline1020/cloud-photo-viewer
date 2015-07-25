@@ -6,16 +6,8 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/downloading"
-        android:textColor="#f69c4c"
-        android:textSize="14sp" />
-
     <ImageView
-        android:id="@+id/networkImageView"
+        android:id="@+id/photoImageView"
         android:layout_width="320dp"
         android:layout_height="320dp" />
 
